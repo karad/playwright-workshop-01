@@ -1,0 +1,24 @@
+{
+  "name": "e2e-sample",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Playwright E2E sample with Express API + simple HTML frontend",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "npm run test:e2e",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

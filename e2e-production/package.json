@@ -1,0 +1,20 @@
+{
+  "name": "e2e-production",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Playwright E2E production sample",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "npm run test:e2e",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "playwright-lighthouse": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
